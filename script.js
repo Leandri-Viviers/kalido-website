@@ -353,14 +353,15 @@ function initialize()
 	$('.dl-text').addClass('sub-mobile');
 	$('.dl-text').wrap('<div class="sub-container"></div>');
 	$('#learn-more').remove();
-	$('.footer-header').after('<a target="_blank" href="faq.html#page/slide1"> Frequently Asked Questions </a><br/>');
-	$('.footer-links').css({'text-align':'center', 'width':'40%'});
-	$('img.social').css({'width':'18%'});
-	$('img#copy-logo').css({'width':'80%'});
-	$('p#copy-text').css({'font-size':'12pt', 'font-size':'2.4vm', 'font-size':'2.4vmin'});
-	$('p#footer-header').css({'font-size':'18pt','font-size':'3vm','font-size':'3vmin'});
-	$('#support a').css({'font-size':'12pt', 'font-size':'2.4vm', 'font-size':'2.4vmin'});
-	$('img.social').css({'width':'50%'});
+	$('#support').append('<br/><a target="_blank" href="faq.html#page/slide1"> FAQs </a>');
+	$('.footer-links').css({'text-align':'center', 'width':'30%', 'margin-top':'3%'});
+	$('img.social').css({'width':'25%'});
+	$('img#copy-logo').css({'width':'65%', 'margin-left':'5%'});
+	$('p#copy-text').css({'font-size':'12pt', 'font-size':'2.4vm', 'font-size':'2.4vmin', 'margin-left':'5%'});
+	$('p.footer-header').css({'font-size':'18pt','font-size':'3vm','font-size':'3vmin'});
+	$('#support a').css({'font-size':'14pt', 'font-size':'2.6vm', 'font-size':'2.6vmin', 'color':'#B0BEC5'});
+	$('div.footer-logo').css({'width':'30%', 'margin-top':'3%'});
+	$('div.social-media').css({'width':'30%', 'margin-top':'3%'});
 	
 }
 
