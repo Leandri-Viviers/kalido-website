@@ -1,0 +1,83 @@
+body
+{
+	font-size: 24pt;
+	font-size: 3.6vm;
+	font-size: 3.6vmin;
+}
+
+/* font sizes */
+p.heading
+{
+	font-size: 32pt;
+	font-size: 4.4vm;
+	font-size: 4.4vmin;
+	text-align: center;
+}
+
+span.par
+{
+	font-size: 26pt;
+	font-size: 3.8vm;
+	font-size: 3.8vmin;
+}
+
+.tagline
+{
+	font-size: 28pt;
+	font-size: 4vm;
+	font-size: 4vmin;
+	color: #263238;
+	opacity: 1;
+}
+
+.sub-dl-btn
+{
+	display: block;
+	margin: 0;
+	font-family: NexaLight;
+	font-size: 22pt;
+	font-size: 3.4vm;
+	font-size: 3.4vmin;
+	margin-bottom: 10%;
+	margin-top: 10%;
+}
+
+img#kalido-01
+{
+	width: 60%;
+}
+
+#copy-4
+{
+	text-align: center;
+}
+
+.section
+{
+	background-color: #00272B;
+}
+
+.dark
+{
+	background-color: #FFFFFF;
+}
+
+#home
+{
+	width: 100%;
+	background-image: url('../img/home/page-2.svg');
+}
+
+.padded
+{
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+.logo-mobile
+{
+	position: relative;
+	margin-top: 6%;
+	max-width: 60%;
+	max-height: 15%;
+}
