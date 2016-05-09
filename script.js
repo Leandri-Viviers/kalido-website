@@ -357,9 +357,10 @@ function initialize()
 	$('.footer-links').css({'text-align':'center', 'width':'40%'});
 	$('img.social').css({'width':'18%'});
 	$('img#copy-logo').css({'width':'80%'});
-	$('#copy-text').addClass('mobile-copy');
-	$('#footer-header').addClass('mobile-footer-header');
-	$('#footer-header a').addClass('mobile-footer-links');
+	$('p#copy-text').css({'font-size':'12pt', 'font-size':'2.4vm', 'font-size':'2.4vmin'});
+	$('p#footer-header').css({'font-size':'18pt','font-size':'3vm','font-size':'3vmin'});
+	$('#support a').css({'font-size':'12pt', 'font-size':'2.4vm', 'font-size':'2.4vmin'});
+	$('img.social').css({'width':'50%'});
 	
 }
 
