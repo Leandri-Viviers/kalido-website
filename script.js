@@ -3,7 +3,7 @@ $(document).ready(function(){
 	var device = window.matchMedia("(max-device-width:768px)");
 	var tablet = window.matchMedia("(max-device-width:1024px)");
 
-	if(!device.matches || !tablet.matches)
+	if(device.matches || tablet.matches)
 	{
 		$('#menu').remove();
 		$('#home-1').remove();
