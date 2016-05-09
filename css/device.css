@@ -38,8 +38,8 @@ span.par
 	font-size: 22pt;
 	font-size: 3.4vm;
 	font-size: 3.4vmin;
-	margin-bottom: 10%;
-	margin-top: 10%;
+	margin-bottom: 5%;
+	margin-top: 5%;
 }
 
 img#kalido-01
@@ -94,4 +94,11 @@ img#kalido-01
 	font-size: 16pt;
 	font-size: 2.8vm;
 	font-size: 2.8vmin;
+}
+
+.mobile-footer-links
+{
+	font-size: 14pt;
+	font-size: 2.6vm;
+	font-size: 2.6vmin;
 }

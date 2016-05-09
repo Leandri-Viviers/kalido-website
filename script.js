@@ -359,6 +359,7 @@ function initialize()
 	$('img#copy-logo').css({'width':'80%'});
 	$('#copy-text').addClass('mobile-copy');
 	$('#footer-header').addClass('mobile-footer-header');
+	$('#footer-header a').addClass('mobile-footer-links');
 	
 }
 
