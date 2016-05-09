@@ -17,6 +17,13 @@ $(document).ready(function(){
 		$('#home').css('height', height);
 
 		$('#home').append('<img class="logo-mobile" src="img/home/logo-mobile.svg"/>');
+		$('#home').append('<img id="home-mountains" src="img/home/mountains-1.svg"/>');
+		$('#home').append('<img id="home-city" src="img/home/city-1.svg"/>');
+		$('#home').append('<div id="home-floor">&nbsp;</div>');
+		$('#home').append('<div id="home-path">&nbsp;</div>');
+		$('#home').append('<img id="home-char" src="img/home/home-chars.svg"/>');
+		$('#home').append('<img id="home-tree-left" src="img/home/left-tree-1.svg"/>');
+		$('#home').append('<img id="home-tree-right" src="img/home/right-tree-2.svg"/>');
 
 		var supportsOrientationChange = "onorientationchange" in window,
     	orientationEvent = supportsOrientationChange ? "orientationchange" : "resize";
@@ -359,7 +366,7 @@ function initialize()
 	$('img#copy-logo').css({'width':'65%', 'margin-left':'5%'});
 	$('p#copy-text').css({'font-size':'12pt', 'font-size':'2.4vm', 'font-size':'2.4vmin', 'margin-left':'5%'});
 	$('p.footer-header').css({'font-size':'18pt','font-size':'3vm','font-size':'3vmin'});
-	$('#support a').css({'font-size':'14pt', 'font-size':'2.6vm', 'font-size':'2.6vmin', 'color':'#B0BEC5'});
+	$('#support a').css({'font-size':'16pt', 'font-size':'2.8vm', 'font-size':'2.8vmin', 'color':'#B0BEC5'});
 	$('div.footer-logo').css({'width':'30%', 'margin-top':'3%'});
 	$('div.social-media').css({'width':'30%', 'margin-top':'3%'});
 	

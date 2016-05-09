@@ -1,0 +1,13 @@
+/css/device.css
+/css/tablet.css
+/css/style.css
+
+/index.html
+/script.js
+
+/img/home/char-1.svg
+/img/home/fountain.svg
+/img/home/home-chars.svg
+/img/home/logo-mobile.svg
+/img/home/right-tree-2.svg
+/img/home/runner.svg
