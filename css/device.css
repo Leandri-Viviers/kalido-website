@@ -81,3 +81,17 @@ img#kalido-01
 	max-width: 60%;
 	max-height: 15%;
 }
+
+.mobile-copy
+{
+	font-size: 12pt;
+	font-size: 2.4vm;
+	font-size: 2.4vmin;
+}
+
+.mobile-footer-header
+{
+	font-size: 16pt;
+	font-size: 2.8vm;
+	font-size: 2.8vmin;
+}

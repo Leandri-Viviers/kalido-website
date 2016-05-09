@@ -356,9 +356,10 @@ function initialize()
 	$('.footer-header').after('<a target="_blank" href="faq.html#page/slide1"> Frequently Asked Questions </a><br/>');
 	$('.footer-links').css({'text-align':'center', 'width':'40%'});
 	$('img.social').css({'width':'18%'});
-	$('img#copy-logo').css({'width':'50%'});
-	$('#copy-text').css({'font-size':'12pt', 'font-size':'2.4vm', 'font-size':'2.4vmin'});
-	$('#footer-header').css({'font-size':'16pt', 'font-size':'2.8vm', 'font-size':'2.8vmin'});
+	$('img#copy-logo').css({'width':'80%'});
+	$('#copy-text').addClass('mobile-copy');
+	$('#footer-header').addClass('mobile-footer-header');
+	
 }
 
 function responsive(index)
