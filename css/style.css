@@ -576,10 +576,21 @@ img#dl-download
 	margin-top: 7%;
 }
 
+img#download-1
+{
+	width: 40%;
+	display: block;
+	margin: 0 auto;
+	margin-top: 6%;
+}
+
 /* page 6 */
 
 img#kalido-01
 {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 5%;
 	width: 50%;
 }
 
