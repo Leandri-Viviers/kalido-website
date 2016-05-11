@@ -44,7 +44,7 @@ $(document).ready(function(){
 		// scroll to page
 		$('.download').click(function(e){
 			e.preventDefault();
-			$(this).animatescroll();
+			$('#download-page').animatescroll();
 		});
 	}
 	else
@@ -351,7 +351,6 @@ function replaceImages()
 function initialize()
 {	
 	$('#download-1').remove();
-	$('a.download').attr('href', '#download-page');
 	$('#copy-4').append('<a class="appstore" href=""><img class="download-img" src="img/illustrations/dl-button.svg"/></a>');
 	$('#copy-7').removeClass('paragraph paragraph-wide').addClass('paragraph-mobile');
 	$('#copy-7 .illustration-top').removeClass().addClass('illustration-mobile');
