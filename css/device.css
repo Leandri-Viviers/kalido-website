@@ -34,11 +34,11 @@ span.par
 {
 	display: block;
 	margin: 0;
-	font-family: NexaLight;
-	font-size: 22pt;
-	font-size: 3.4vm;
-	font-size: 3.4vmin;
-	margin-bottom: 5%;
+	font-family: OpenRegular;
+	font-size: 24pt;
+	font-size: 3.6vm;
+	font-size: 3.6vmin;
+	margin-bottom: 7%;
 	margin-top: 5%;
 }
 

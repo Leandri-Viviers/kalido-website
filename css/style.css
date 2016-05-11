@@ -521,6 +521,7 @@ p.three-col
 
 p.dl-head
 {
+	font-family: OpenLight;
 	display: block;
 	margin: 0;
 	text-align: center;
@@ -531,8 +532,7 @@ p.dl-sub
 {
 	display: block;
 	margin: 0;
-	font-family: NexaLight;
-	font-weight: bold;
+	font-family: OpenRegular;
 	font-size: 18pt;
 	font-size: 1.6vw;
 	font-size: 1.6vmax;
@@ -570,15 +570,14 @@ img#dl-kalido
 
 img#dl-download
 {
-	width: 50%;
+	width: 75%;
 	display: block;
 	margin: 0 auto;
-	margin-top: 7%;
 }
 
 img#download-1
 {
-	width: 40%;
+	width: 55%;
 	display: block;
 	margin: 0 auto;
 	margin-top: 6%;
@@ -691,4 +690,14 @@ div.download-mobile
 {
 	margin-top: 5%;
 	width: 75%;
+}
+
+span.bold
+{
+	font-family: OpenRegular;
+}
+
+#dl-btn
+{
+	width: 80%;
 }

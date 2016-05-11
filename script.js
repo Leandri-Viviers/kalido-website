@@ -342,8 +342,9 @@ function replaceImages()
 }
 
 function initialize()
-{
+{	
 	$('#download-1').remove();
+	$('a.download').attr('target', '#download-page');
 	$('#copy-4').append('<a class="appstore" href=""><img class="download-img" src="img/illustrations/dl-button.svg"/></a>');
 	$('#copy-7').removeClass('paragraph paragraph-wide').addClass('paragraph-mobile');
 	$('#copy-7 .illustration-top').removeClass().addClass('illustration-mobile');
@@ -352,9 +353,9 @@ function initialize()
 		$(this).addClass('btn-mobile');
 	});
 	$('#dl-div').addClass('download-mobile');
-	$('.dl-head > strong:first-child').after('</br>');
+	$('.dl-head > span:first-child').after('</br>');
 	$('.dl-section').remove();
-	$('.dl-sub').after('<a class="appstore" href=""><img class="download-img" src="img/illustrations/dl-button.svg"/></a>');
+	$('.dl-sub').after('<a class="appstore" href=""><img id="dl-btn" class="download-img" src="img/illustrations/dl-button.svg"/></a>');
 	$('.dl-sub').after('<img src="img/illustrations/characters.svg" class="illustration-mobile"/>');
 	$('.dl-sub').removeClass('dl-sub').addClass('sub-dl-btn');
 	$('.dl-text').find('br').remove();
@@ -367,10 +368,9 @@ function initialize()
 	$('img#copy-logo').css({'width':'65%', 'margin-left':'5%'});
 	$('p#copy-text').css({'font-size':'12pt', 'font-size':'2.4vm', 'font-size':'2.4vmin', 'margin-left':'5%'});
 	$('p.footer-header').css({'font-size':'18pt','font-size':'3vm','font-size':'3vmin'});
-	$('#support a').css({'font-size':'16pt', 'font-size':'2.8vm', 'font-size':'2.8vmin', 'color':'#B0BEC5'});
+	$('#support a').css({'font-size':'16pt', 'font-size':'2.8vm', 'font-size':'2.8vmin', 'color':'#B0BEC5', 'display':'inline-block', 'padding':'3%'});
 	$('div.footer-logo').css({'width':'30%', 'margin-top':'3%'});
 	$('div.social-media').css({'width':'30%', 'margin-top':'3%'});
-	
 }
 
 function responsive(index)
