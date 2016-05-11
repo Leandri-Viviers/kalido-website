@@ -40,6 +40,12 @@ $(document).ready(function(){
 		{
 			responsive(i);
 		}
+
+		// scroll to page
+		$('.download').click(function(e){
+			e.preventDefault();
+			$(this).animatescroll();
+		});
 	}
 	else
 	{	
@@ -104,6 +110,12 @@ $(document).ready(function(){
 		setPositions();
 		animateBackground(true, 1);
 		animate1(true);
+
+		// scroll to page
+		$('.download').click(function(e){
+			e.preventDefault();
+			$.fn.fullpage.moveTo(8);
+		});
 	}
 
 	setStore();
@@ -136,11 +148,6 @@ $(document).ready(function(){
 			$(this).find('img').attr('src', 'img/icon/download2.svg');
 		}
 	);
-
-	$('.download').click(function(e){
-		e.preventDefault();
-		$.fn.fullpage.moveTo(8);
-	});
 
 	$('#facebook').hover(
 		function(){
@@ -344,7 +351,7 @@ function replaceImages()
 function initialize()
 {	
 	$('#download-1').remove();
-	$('a.download').attr('target', '#download-page');
+	$('a.download').attr('href', '#download-page');
 	$('#copy-4').append('<a class="appstore" href=""><img class="download-img" src="img/illustrations/dl-button.svg"/></a>');
 	$('#copy-7').removeClass('paragraph paragraph-wide').addClass('paragraph-mobile');
 	$('#copy-7 .illustration-top').removeClass().addClass('illustration-mobile');
