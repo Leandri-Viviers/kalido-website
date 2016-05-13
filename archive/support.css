@@ -1,0 +1,156 @@
+html, body
+{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	background-color: blue;
+}
+
+@font-face
+{
+	font-family: OpenLight;
+	src: url("../fonts/OpenSans-Light.ttf");
+}
+
+@font-face
+{
+	font-family: OpenRegular;
+	src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+@font-face
+{
+	font-family: NexaLight;
+	src: url("../fonts/Nexa-Light.otf");
+}
+
+div#menu
+{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 15%;
+	background-color: #00272B;
+}
+
+#logo
+{
+	width: 20px;
+   	margin-top:2%;
+   	margin-bottom:2%;
+   	margin-left:10%;
+}
+
+p.heading
+{
+	vertical-align: middle;
+	font-family: NexaLight;
+	font-size: 16pt;
+	font-size: 1.4vw;
+	font-size: 1.4vmax;
+	letter-spacing: 2pt;
+	letter-spacing: 0.2vw;
+	letter-spacing: 0.2vmax;
+	color: white; 
+    margin:2%;
+    margin-right:10%;
+}
+
+p
+{
+
+	margin: 0;
+}
+
+#faq-nav
+{
+	display: inline;
+	font-family: OpenRegular;
+	color: #90A4AE;
+}
+
+li.faq-option
+{
+	display: inline-block;
+	margin: 2%;
+}
+
+.faq-div
+{
+	background-color: #ECEFF1;
+	height: 15%;
+}
+
+a
+{
+	color: inherit;
+	text-decoration: none;
+}
+
+.slide{
+	font-family: OpenLight;
+
+}
+
+#faq-body
+{
+	width:80%;
+	margin: auto;
+}
+
+div#policy
+{
+	font-family: OpenLight;
+	color:black;
+	margin-left: 10%;
+	margin-right: 20%;
+	margin-bottom: 10%;
+}
+
+p.bold
+{	
+	font-family:OpenRegular;
+	font-size: 17pt;
+	font-size: 1.5vw;
+	font-size: 1.5vmax;
+}
+
+p.info
+{
+	font-size: 12pt;
+	font-size: 1vw;
+	font-size: 1vmax;
+}
+
+ul
+{
+	font-size: 12pt;
+	font-size: 1vw;
+	font-size: 1vmax;
+}
+
+/* ---- footer ----*/
+
+
+div.footer
+{
+	font-family: OpenRegular;
+	background-color: #00272B;
+	width: 100%;
+	height: 20%;
+	text-align: center;
+	vertical-align: middle;
+	display: block;
+}
+
+p#copy-text
+{
+	color: #607d8b;
+	font-size: 11pt;
+	font-size: 1.5vm;
+	font-size: 1.5vmin;
+	margin: 0 auto;
+	padding: 1%;
+
+}

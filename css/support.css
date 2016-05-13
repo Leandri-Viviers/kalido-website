@@ -2,8 +2,9 @@ html, body
 {
 	margin: 0;
 	padding: 0;
-	background-color: #FFFFFF;
+	height: 100%;
 }
+
 @font-face
 {
 	font-family: OpenLight;
@@ -22,126 +23,259 @@ html, body
 	src: url("../fonts/Nexa-Light.otf");
 }
 
-div#menu
+/* font settings */
+p
 {
-	width: 100%;
-	background-color: #00272B;
-
-	float: left;
-	margin-bottom: 5%;
-}
-
-#logo{
-	width: 10%;
-    float: left;
-   	margin-top:2%;
-   	margin-bottom:2%;
-   	margin-left:10%;
-
-
-}
-p.heading{
-	vertical-align: middle;
-	font-family: NexaLight;
-	font-size: 16pt;
-	font-size: 1.4vw;
-	font-size: 1.4vmax;
-	letter-spacing: 2pt;
-	letter-spacing: 0.2vw;
-	letter-spacing: 0.2vmax;
-	color: white;
-	float: right;    
-    margin:2%;
-    margin-right:10%;
-
-}
-p{
-
 	margin: 0;
+	padding: 0;
+	letter-spacing: 0.1pt;
 }
-#faq-nav{
-	display: inline;
-	font-family: OpenRegular;
-	color: #90A4AE;
-}
-li.faq-option
-{
-	display: inline-block;
-	margin: 2%;
-}
-.faq-div
-{
-	background-color: #ECEFF1;
-	height: 15%;
-}
+
 a
 {
-	color: inherit;
 	text-decoration: none;
 }
 
-.slide{
-	font-family: OpenLight;
-
-}
-#faq-body
+a.mail
 {
-	width:80%;
-	margin: auto;
-}
-div#policy{
 	font-family: OpenLight;
-	color:black;
+	color: #FF6D00;
+}
 
+p.bold
+{	
+	font-family: OpenRegular;
+	font-size: 18pt;
+	font-size: 1.6vw;
+	font-size: 1.6vmax;
 	margin-left: 10%;
 	margin-right: 20%;
-	margin-bottom: 10%;
-	
+	padding-top: 0;
+	padding-bottom: 1%;
+	border-bottom: 1px solid #DDDDDD;
 }
 
-p.stronger
+.bold-mobile
+{
+	font-family: OpenRegular;
+	font-size: 18pt;
+	font-size: 1.6vw;
+	margin-left: 10%;
+	margin-right: 20%;
+	padding-top: 0;
+	padding-bottom: 1%;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+p.question
 {	
-	font-family:OpenRegular;
-	font-size: 17pt;
-	font-size: 1.5vw;
-	font-size: 1.5vmax;
-
-
+	font-family: OpenRegular;
+	font-size: 14pt;
+	font-size: 1.2vw;
+	font-size: 1.2vmax;
+	margin-left: 10%;
+	margin-right: 20%;
+	padding-top: 1%;
+	padding-bottom: 1%;
 }
+
+.question-mobile
+{
+	font-family: OpenRegular;
+	font-size: 14pt;
+	font-size: 1.4vw;
+	margin-left: 10%;
+	margin-right: 20%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
 p.info
 {
 	font-size: 12pt;
 	font-size: 1vw;
 	font-size: 1vmax;
+	margin-left: 10%;
+	margin-right: 20%;
+	padding-top: 1%;
+	padding-bottom: 1%;
 }
 
-ul{
+.info-mobile
+{
+	font-size: 12pt;
+	font-size: 1.2vw;
+	margin-left: 10%;
+	margin-right: 20%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+/* header */
+div.menu
+{
+	position: fixed;
+	height: 15%;
+	width: 100%;
+	background-color: #00272B;
+	z-index: 10;
+}
+
+a.menu-link
+{
+	position: relative;
+	height: 24%;
+	top: 38%;
+	display: inline-block;
+	text-decoration: none;
+	margin: 0;
+	margin-left: 10%;
+}
+
+img.menu-logo
+{
+	display: block;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/* content */
+div.content
+{
+	position: relative;
+	top: 21%;
+	font-family: OpenLight;
+	color: #000000;
+	margin: 0;
+}
+
+/* list style */
+ul.list
+{
+	list-style-type: initial;
+	font-family: OpenLight;
 	font-size: 12pt;
 	font-size: 1vw;
 	font-size: 1vmax;
+	margin-left: 10%;
+	margin-right: 20%;
 }
 
-/* ---- footer ----*/
+.list li
+{
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
 
+.list-mobile
+{
+	font-family: OpenLight;
+	font-size: 12pt;
+	font-size: 1.2vw;
+	margin-left: 10%;
+	margin-right: 20%;
+}
 
+/* footer */
 div.footer
 {
-	font-family: OpenRegular;
+	position: relative;
+	top: 21%;
+	display: block;
 	background-color: #00272B;
 	width: 100%;
-	height: 20%;
 	text-align: center;
 	vertical-align: middle;
-	display: block;
+	z-index: 50;
 }
 
-p#copy-text
+p.copy-text
 {
+	font-family: OpenLight;
+	font-size: 10pt;
+	font-size: 0.8vw;
+	font-size: 0.8vmax;
 	color: #607d8b;
-	font-size: 11pt;
-	font-size: 1.5vm;
-	font-size: 1.5vmin;
-	margin: 0 auto;
-	padding: 1%;
-
+	margin: 0;
+	padding: 2%;
 }
+
+.copy-mobile
+{
+	font-family: OpenLight;
+	font-size: 10pt;
+	font-size: 1.0vw;
+	color: #CFD8DC;
+	margin: 0;
+	padding: 2%;
+}
+
+/* faq menu */
+div.sub-menu
+{
+	position: fixed;
+	top: 15%;
+	height: 6%;
+	width: 100%;
+	text-align: center;
+	display: table;
+	vertical-align: middle;
+	z-index: 15;
+	font-size: 12pt;
+	font-size: 1vw;
+	font-size: 1vmax;
+	background-color: #ECEFF1;
+	color: #90A4AE;
+}
+
+ul#nav
+{
+	display: table-cell;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+}
+
+li.nav-opt
+{
+	display: inline-block;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+a.sub
+{
+	font-family: OpenRegular;
+	color: #B0BEC5;
+}
+
+/* faq pages */
+
+.page
+{
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+.grey
+{
+	background-color: #FAFAFA;
+}
+
+.active-nav
+{
+	color: #00796B !important;
+}
+
+.hover-nav
+{
+	color: #00BFA5 !important;
+}
+
+/*
+	Light Teal: 00BFA5;
+	Dark Teal: 00796B;
+	Dark Green: 00272B;
+ */
