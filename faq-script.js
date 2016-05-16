@@ -3,37 +3,48 @@ $(document).ready(function(){
 	var url = window.location.href;
 	page = url.match(/page=(.*)/)[1];
 
-	$('.nav-opt a').click(function(e){
-		e.preventDefault();
-		var id = $(this).attr('id');
-		var index = id.split("-").pop();
-		activate(index);
-	});
+	var mobile = window.matchMedia("(max-device-width:1024px)");
 
-	$('.nav-opt a').hover(
-		function(){
-			$(this).addClass('hover-nav');
-		},
-		function(){
-			$(this).removeClass('hover-nav');
-		}
-	);
-
-	$(window).scroll(function()
+	if(mobile)
 	{
-		for(var i = 1; i < 7; i++)
-		{
-			if($(window).scrollTop() > $('div#page-'+i).offset().top - $(window).height()*0.21 - $(window).height()/4)
-			{
-				$('.active-nav').removeClass('active-nav');
-				$('#link-'+i).addClass('active-nav');
-			}
-		}
-	});
+		$('.page').remove();
+		$('.content').load('faq.html #page-'+page);
+	}
+	else
+	{
+		$('.nav-opt a').click(function(e){
+			e.preventDefault();
+			var id = $(this).attr('id');
+			var index = id.split("-").pop();
+			activate(index);
+		});
 
-	setTimeout(function(){
-		$('a#link-'+page).trigger('click');
-	});
+		$('.nav-opt a').hover(
+			function(){
+				$(this).addClass('hover-nav');
+			},
+			function(){
+				$(this).removeClass('hover-nav');
+			}
+		);
+
+		$(window).scroll(function()
+		{
+			for(var i = 1; i < 7; i++)
+			{
+				if($(window).scrollTop() > $('div#page-'+i).offset().top - $(window).height()*0.21 - $(window).height()/4)
+				{
+					$('.active-nav').removeClass('active-nav');
+					$('#link-'+i).addClass('active-nav');
+				}
+			}
+		});
+
+		setTimeout(function(){
+			$('a#link-'+page).trigger('click');
+		});
+	}
+	
 });
 
 function activate(index)

@@ -66,9 +66,9 @@ p.bold
 	font-size: 18pt;
 	font-size: 1.6vw;
 	margin-left: 10%;
-	margin-right: 20%;
+	margin-right: 10%;
 	padding-top: 0;
-	padding-bottom: 1%;
+	padding-bottom: 2%;
 	border-bottom: 1px solid #DDDDDD;
 }
 
@@ -90,9 +90,9 @@ p.question
 	font-size: 14pt;
 	font-size: 1.4vw;
 	margin-left: 10%;
-	margin-right: 20%;
-	padding-top: 1%;
-	padding-bottom: 1%;
+	margin-right: 10%;
+	padding-top: 2%;
+	padding-bottom: 2%;
 }
 
 p.info
@@ -111,9 +111,9 @@ p.info
 	font-size: 12pt;
 	font-size: 1.2vw;
 	margin-left: 10%;
-	margin-right: 20%;
-	padding-top: 1%;
-	padding-bottom: 1%;
+	margin-right: 10%;
+	padding-top: 2%;
+	padding-bottom: 2%;
 }
 
 /* header */
@@ -179,7 +179,7 @@ ul.list
 	font-size: 12pt;
 	font-size: 1.2vw;
 	margin-left: 10%;
-	margin-right: 20%;
+	margin-right: 10%;
 }
 
 /* footer */
