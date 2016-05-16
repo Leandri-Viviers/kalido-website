@@ -156,7 +156,7 @@ div.content
 }
 
 /* list style */
-ul.list
+.list
 {
 	list-style-type: initial;
 	font-family: OpenLight;
@@ -180,6 +180,11 @@ ul.list
 	font-size: 1.2vw;
 	margin-left: 10%;
 	margin-right: 10%;
+}
+
+ol.ordered
+{
+	list-style-type: lower-roman;
 }
 
 /* footer */
