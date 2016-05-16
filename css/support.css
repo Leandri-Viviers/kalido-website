@@ -271,7 +271,7 @@ a.sub
 
 .active-nav
 {
-	color: #00796B !important;
+	color: #26A69A !important;
 }
 
 .hover-nav
@@ -284,3 +284,15 @@ a.sub
 	Dark Teal: 00796B;
 	Dark Green: 00272B;
  */
+
+/* hamburger menu */
+img#hamburger
+{
+	position: relative;
+	height: 24%;
+	top: 38%;
+	display: inline-block;
+	text-decoration: none;
+	margin: 0;
+	margin-right: 10%;
+}

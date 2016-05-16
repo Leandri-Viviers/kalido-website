@@ -5,9 +5,9 @@ $(document).ready(function(){
 
 	var mobile = window.matchMedia("(max-device-width:1024px)");
 
-	if(mobile.matches)
+	if(!mobile.matches)
 	{
-		var height = $(window).height()*0.8;
+		/*var height = $(window).height()*0.8;
 		$('.content').css({'min-height':height});
 
 		var supportsOrientationChange = "onorientationchange" in window,
@@ -18,9 +18,12 @@ $(document).ready(function(){
     			height = $(window).height()*0.8;
 				$('.content').css({'min-height':height});
     		}, 500);
-		}, false);
+		}, false);*/
 
-		$('.page').remove();
+		$('.menu').append('<a id="hamburger-link" href=""><img id="hamburger" src="img/hamburger.svg"/></a>');
+		$('.sub-menu-mobile').hide();
+
+		$('.page').remove();/*
 		$('.content').load('faq.html #page-'+page);		
 
 		$('.nav-opt a').click(function(e){
@@ -28,6 +31,18 @@ $(document).ready(function(){
 			var id = $(this).attr('id');
 			var index = id.split("-").pop();
 			$('.content').load('faq-mobile.html #page-'+index);
+		});*/
+
+		$('#hamburger-link').click(function(e){
+			e.preventDefault();
+			if($('.sub-menu-mobile').hasClass('open'))
+			{
+				collapseMenu();
+			}
+			else
+			{
+				expandMenu();
+			}
 		});
 	}
 	else
@@ -74,4 +89,14 @@ function activate(index)
 		scrollTop: $('div#page-'+index).offset().top - $(window).height()*0.21 + 2
 	}, 400);
 	$('#link-'+index).addClass('active-nav');
+}
+
+function expandMenu()
+{
+	$('.sub-menu-mobile').addClass('open');
+}
+
+function collapseMenu()
+{
+	$('.sub-menu-mobile').removeClass('open');
 }

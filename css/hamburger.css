@@ -5,16 +5,14 @@ div.sub-menu-mobile
 	height: 85%;
 	width: 100%;
 	text-align: center;
-	display: table;
-	vertical-align: middle;
-	z-index: 15;
-	background-color: rgba(0,0,0,0.9);
+	z-index: 100;
+	background-color: #00272B;
 	color: #90A4AE;
 }
 
 ul#nav-mobile
 {
-	display: table-cell;
+	height: 100%;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -24,14 +22,23 @@ ul#nav-mobile
 
 li.nav-opt-mobile
 {
-	display: block;
+	display: table;
+	width: 100%;
+	height: 14%;
 	font-size: 12pt;
 	font-size: 1.2vw;
-	height: 16%;
-	border-bottom: 1px solid #333333;
 }
 
-li.last
+a.sub-mobile
 {
-	border: none;
+	display: table-cell;
+	vertical-align: middle;
+	font-family: OpenRegular;
+	color: #B0BEC5;
+}
+
+.active-nav-mobile
+{
+	background-color: #26A69A;
+	color: #00272B;
 }
