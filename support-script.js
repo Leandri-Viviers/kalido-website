@@ -10,9 +10,7 @@ $(document).ready(function(){
 		$('.copy-text').remove();
 		$('.footer').append('<p class="copy-mobile">Copyright &copy; 2016.<br/>Kalido&trade; by Om Mobile Ventures. All rights reserved.</p>');
 		$('.menu-link').css({'width':'30vw'});
-		$('.menu').css({'padding-top':'6%', 'padding-bottom':'6%'});
 		$('.content').css({'margin-right':'10%'});
 		$('.list').removeClass('list').addClass('list-mobile');
 	}
-
 });

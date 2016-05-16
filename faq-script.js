@@ -3,13 +3,11 @@ $(document).ready(function(){
 	var url = window.location.href;
 	page = url.match(/page=(.*)/)[1];
 
-	activate(page);
-
 	$('.nav-opt a').click(function(e){
 		e.preventDefault();
 		var id = $(this).attr('id');
 		var index = id.split("-").pop();
-		activate(index, true);
+		activate(index);
 	});
 
 	$('.nav-opt a').hover(
@@ -25,12 +23,16 @@ $(document).ready(function(){
 	{
 		for(var i = 1; i < 7; i++)
 		{
-			if($(window).scrollTop() > $('div#page-'+i).offset().top - $(window).height()*0.21 - $(window).height()/2)
+			if($(window).scrollTop() > $('div#page-'+i).offset().top - $(window).height()*0.21 - $(window).height()/4)
 			{
 				$('.active-nav').removeClass('active-nav');
 				$('#link-'+i).addClass('active-nav');
 			}
 		}
+	});
+
+	setTimeout(function(){
+		$('a#link-'+page).trigger('click');
 	});
 });
 
