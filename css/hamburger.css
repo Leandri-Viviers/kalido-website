@@ -1,0 +1,37 @@
+div.sub-menu-mobile
+{
+	position: fixed;
+	top: 15%;
+	height: 85%;
+	width: 100%;
+	text-align: center;
+	display: table;
+	vertical-align: middle;
+	z-index: 15;
+	background-color: rgba(0,0,0,0.9);
+	color: #90A4AE;
+}
+
+ul#nav-mobile
+{
+	display: table-cell;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	font-size: 0;
+}
+
+li.nav-opt-mobile
+{
+	display: block;
+	font-size: 12pt;
+	font-size: 1.2vw;
+	height: 16%;
+	border-bottom: 1px solid #333333;
+}
+
+li.last
+{
+	border: none;
+}

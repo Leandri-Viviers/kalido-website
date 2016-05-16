@@ -368,7 +368,7 @@ function initialize()
 	$('.dl-text').addClass('sub-mobile');
 	$('.dl-text').wrap('<div class="sub-container"></div>');
 	$('#learn-more').remove();
-	$('#support').append('<br/><a target="_blank" href="faq.html#page/slide1"> FAQs </a>');
+	$('#support').append('<br/><a target="_blank" href="faq.html?page=1"> FAQs </a>');
 	$('.footer-links').css({'text-align':'center', 'width':'30%', 'margin-top':'3%'});
 	$('img.social').css({'width':'25%'});
 	$('img#copy-logo').css({'width':'65%', 'margin-left':'5%'});

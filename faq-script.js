@@ -5,10 +5,30 @@ $(document).ready(function(){
 
 	var mobile = window.matchMedia("(max-device-width:1024px)");
 
-	if(mobile)
+	if(mobile.matches)
 	{
+		var height = $(window).height()*0.8;
+		$('.content').css({'min-height':height});
+
+		var supportsOrientationChange = "onorientationchange" in window,
+    	orientationEvent = supportsOrientationChange ? "orientationchange" : "resize";
+
+		window.addEventListener(orientationEvent, function() {
+    		setTimeout(function(){
+    			height = $(window).height()*0.8;
+				$('.content').css({'min-height':height});
+    		}, 500);
+		}, false);
+
 		$('.page').remove();
-		$('.content').load('faq.html #page-'+page);
+		$('.content').load('faq.html #page-'+page);		
+
+		$('.nav-opt a').click(function(e){
+			e.preventDefault();
+			var id = $(this).attr('id');
+			var index = id.split("-").pop();
+			$('.content').load('faq-mobile.html #page-'+index);
+		});
 	}
 	else
 	{
