@@ -329,7 +329,7 @@ function setStore()
 
 	if (userAgentString.indexOf("iPhone") > -1 || userAgentString.indexOf("iPod") > -1 || userAgentString.indexOf("iPad") > -1 || navigator.userAgent.indexOf('Mac OS X') > -1)
 	{
-    	$('.appstore').attr("href", "https://itunes.apple.com/us/app/kalido/id961851767?mt=8");
+    	$('.appstore').attr("href", "https://itunes.apple.com/app/kalido/id961851767");
 	}
 	else
 	{
