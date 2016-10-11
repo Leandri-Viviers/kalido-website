@@ -1,0 +1,229 @@
+/*** Header ***/
+div#index-container
+{
+	background-image: url(../img/photo/landing.jpg);
+	background-attachment: fixed;
+	background-position: bottom center;
+}
+
+p#index-header-text
+{
+	font-size: 18pt;
+}
+
+div.store-buttons
+{
+	font-size: 0;
+	margin: 4% 0 0 0;
+}
+
+a.store-link
+{
+	display: inline-block;
+	width: 20%;
+	margin: 0 2% 0 0;
+}
+
+/*** Cards ***/
+a.card
+{
+	display: block;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 3px rgba(0,0,0,0.12);?
+	-webkit-transition: all 0.4s cubic-bezier(.25,.8,.25,1);
+	-moz-transition: all 0.4s cubic-bezier(.25,.8,.25,1);
+	-o-transition: all 0.4s cubic-bezier(.25,.8,.25,1);
+	transition: all 0.4s cubic-bezier(.25,.8,.25,1);
+}
+
+a.card:hover
+{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.12), 0 14px 28px rgba(0,0,0,0.12);
+}
+
+/*** Frequently Asked Questions ***/
+div#faq-container
+{
+	background-image: url(../img/photo/faq.jpg);
+	background-attachment: fixed;
+	width: 100%;
+	text-align: center;
+}
+
+div#faq
+{
+	width: 35%;
+	margin: 0 auto;
+	padding: 5% 0 5% 0;
+}
+
+p#faq-heading
+{
+	margin: 0;
+	font-size: 34pt;
+}
+
+p#faq-text
+{
+	margin: 3% 0 6% 0;
+	font-size: 14pt;
+	line-height: 2;
+	text-align: justify;
+	-moz-text-align-last: center;
+	text-align-last: center;
+}
+
+a#faq-button
+{
+	padding: 5% 12% 5% 12%;
+	color: #CFD8DC;
+	border-color: #CFD8DC;
+}
+
+a#faq-button:hover
+{
+	color: #FFFFFF;
+	border-color: #FFFFFF;
+}
+
+/*** Responsive ***/
+@media only screen
+and (max-width: 1200px)
+{
+	div.store-buttons
+	{
+		margin: 8% 0 0 0;
+	}
+
+	a.store-link
+	{
+		width: 28%;
+	}
+
+	div#faq
+	{
+		width: 70%;
+		padding: 8% 0 8% 0;
+	}
+}
+
+/*** Mobile Portrait ***/
+@media only screen
+and (max-device-width: 992px)
+and (orientation: portrait)
+{
+	/* Header */
+	div#index-container
+	{
+		background-image: url(../img/photo/mobile/landing.jpg);
+		background-attachment: scroll;
+	}
+
+	p#index-header-text
+	{
+		font-size: 16pt;
+		font-size: 5.1vw;
+	}
+
+	div.store-buttons
+	{
+		margin: 8% 0 0 0;
+	}
+
+	a.store-link
+	{
+		width: 48%;
+	}
+
+	/* Frequently Asked Questions */
+	div#faq-container
+	{
+		background-image: url(../img/photo/mobile/landing.jpg);
+		background-attachment: scroll;
+	}
+
+	div#faq
+	{
+		width: 80%;
+		padding: 8% 0 8% 0;
+	}
+
+	p#faq-heading
+	{
+		font-size: 20pt;
+		font-size: 6.6vw;
+	}
+
+	p#faq-text
+	{
+		font-size: 10pt;
+		font-size: 3.7vw;
+	}
+
+	a#faq-button
+	{
+		font-size: 10pt;
+		font-size: 3.7vw;
+		border-size: 1px;
+	}
+}
+
+/*** Mobile Landscape ***/
+@media only screen
+and (max-device-width: 992px)
+and (orientation: landscape)
+{
+	/* Header */
+	div#index-container
+	{
+		background-image: url(../img/photo/mobile/landing.jpg);
+		background-attachment: scroll;
+	}
+
+	p#index-header-text
+	{
+		font-size: 10pt;
+		font-size: 2.8vw;
+	}
+
+	div.store-buttons
+	{
+		margin: 8% 0 0 0;
+	}
+
+	a.store-link
+	{
+		width: 28%;
+	}
+
+	/* Frequently Asked Questions */
+	div#faq-container
+	{
+		background-image: url(../img/photo/mobile/landing.jpg);
+		background-attachment: scroll;
+	}
+
+	div#faq
+	{
+		width: 80%;
+		padding: 8% 0 8% 0;
+	}
+
+	p#faq-heading
+	{
+		font-size: 20pt;
+		font-size: 5.6vw;
+	}
+
+	p#faq-text
+	{
+		font-size: 10pt;
+		font-size: 2.8vw;
+	}
+
+	a#faq-button
+	{
+		font-size: 10pt;
+		font-size: 2.8vw;
+		border-size: 1px;
+	}
+}

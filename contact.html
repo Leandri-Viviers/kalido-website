@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> Kalido </title>
+		<!-- stylesheets -->
+		<link type="text/css" rel="stylesheet" href="css/secondary.css"/>
+		<link type="text/css" rel="stylesheet" href="css/contact.css"/>
+		<!-- favicon -->
+		<link type="image/x-icon" rel="shortcut icon" href="img/icon/favicon.ico"/>
+	</head>
+	<body>
+		<!-- Hamburger -->
+		<input id="hbm-toggle" type="checkbox"/>
+		<label for="hbm-toggle">
+			<img class="hbm-image" id="hbm-open" src="img/icon/hamburger.svg" alt="menu"/>
+			<img class="hbm-image" id="hbm-close" src="img/icon/close.svg" alt="menu"/>
+		</label>
+		<!-- Navigation -->
+		<div id="nav-container">
+			<ul id="nav">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html"> Home </a>
+				</li><!--
+				--><li class="nav-item">
+					<a class="nav-link" href="about.html"> About </a>
+				</li><!--
+				--><li class="nav-item">
+					<a class="nav-link" href="clients.html"> Find Clients </a>
+				</li><!--
+				--><li class="nav-item">
+					<a class="nav-link" href="professionals.html"> Find Professionals </a>
+				</li><!--
+				--><li class="nav-item">
+					<a class="nav-link" href="anyone.html"> Find Anyone </a>
+				</li><!--
+				--><li class="nav-item">
+					<a class="nav-link" href="http://kalido.me/faq.html?page=1" target="_blank"> FAQ </a>
+				</li><!--
+				--><li class="nav-item">
+					<a class="nav-link" href="press.html"> Press </a>
+				</li><!--
+				--><li class="nav-item">
+					<a class="nav-link active" href="contact.html"> Contact Us </a>
+				</li>
+			</ul>
+		</div>
+		<!-- Content -->
+		<div id="wrapper">
+			<!-- Header -->
+			<div class="header-container contact-container">
+				<div class="overlay">
+					<div class="header-inner">
+						<img class="header-logo" src="img/logo/logo.svg"/>
+						<p class="header-subtitle u-line"> Get in touch </p>
+						<p id="contact-header-text" class="header-text">
+							Whether you have a question, a suggestion, or a complaint, we'd love to hear from you.
+						</p>
+					</div>	
+				</div>
+			</div>
+			<!-- Cards -->
+			<div class="card-container grey-container">
+				<div id="cards" class="animation-element fade-up">
+					<div class="contact-card">
+						<p class="card-heading u-white"> Let's talk </p>
+						<p class="card-text">
+							Questions, comments or suggestions? Drop us a mail us directly at info@kalido.me or make use of the contact form below.
+						</p>
+						<a class="button card-button" href="mailto:info@kalido.me" target="_blank"> Email </a>
+						<!--<div id="contact-social">
+							<a class="social-link" id="email-circle" href="https://www.facebook.com/getkalido" target="_blank">
+								<img alt="Like us on Facebook" src="img/social/email-circle.svg"/>
+							</a>
+						</div>-->
+					</div>
+					<div class="contact-card">
+						<p class="card-heading u-white"> Stay updated </p>
+						<p class="card-text">
+							Contact us quickly through social media. You can also follow us to stay updated with the latest Kalido news and releases.
+						</p>
+						<div id="contact-social">
+							<a class="social-link" id="facebook-circle" href="https://www.facebook.com/getkalido" target="_blank">
+								<img alt="Like us on Facebook" src="img/social/facebook-circle.svg"/>
+							</a><!--
+							--><a class="social-link" id="twitter-circle" href="https://twitter.com/getkalido" target="_blank">
+								<img alt="Follow us on Twitter" src="img/social/twitter-circle.svg"/>
+							</a><!--
+							--><a class="social-link" id="instagram-circle" href="https://www.instagram.com/getkalido/" target="_blank">
+								<img alt="Follow us on Instagram" src="img/social/instagram-circle.svg"/>
+							</a>
+						</div>
+					</div>
+					<div class="contact-card">
+						<p class="card-heading u-white"> Need help? </p>
+						<p class="card-text">
+							Questions about how to use Kalido? Try checking out the FAQ's for helpful information about getting the most out of Kalido.
+						</p>
+						<a class="button card-button" href="http://kalido.me/faq.html?page=1" target="_blank"> FAQ </a>
+					</div>
+				</div>
+			</div>
+			<!-- Forms -->
+			<div id="form-container" class="contact-container">
+				<div class="overlay">
+					<div id="form-inner">
+						<p id="contact-heading" class="page-heading u-amber"> Contact Us </p>
+						<form id="display-form" autocomplete="off">
+							<input class="input" id="name" type="text" placeholder="Name"/><br/>
+							<p class="error" id="name-error">&nbsp;</p>
+
+							<input class="input" id="email" type="text" placeholder="Email"/><br/>
+							<p class="error" id="email-error">&nbsp;</p>
+
+							<input id="confirm" type="text"/>
+
+							<textarea class="input" id="msg" rows="1" placeholder="Message"></textarea><br/>
+							<p class="error" id="msg-error">&nbsp;</p>
+
+							<div class="center">
+								<a class="button" id="send-button" href="javascript:submitValidate();"> Send </a>
+							</div>
+						</form>
+					</div>
+					<div class="hidden">
+						<form id="secret-form" method="post" action="http://kl-branch-test.herokuapp.com/incoming/contacts" target="_blank">
+							<input id="sender_name" type="text"/>
+							<input id="sender_email" type="text"/>
+							<textarea id="sender_msg"></textarea>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- Footer -->
+			<div id="footer">
+				<div id="footer-links">
+					<a class="footer-link" href="http://kalido.me/faq.html?page=1" target="_blank"> Support </a><!--
+					--><a class="footer-link" href="http://kalido.me/privacy.html" target="_blank"> Privacy </a><!--
+					--><a class="footer-link" href="http://kalido.me/terms.html" target="_blank"> Terms </a><!--
+					--><p class="copyright" id="copy-desktop"> Copyright &copy; 2016. Om Mobile Ventures </p>
+				</div><!--
+				--><div id="footer-social">
+					<a class="social-link" id="facebook" href="https://www.facebook.com/getkalido" target="_blank">
+						<img class="social" alt="Like us on Facebook" src="img/social/facebook.svg"/>
+					</a><!--
+					--><a class="social-link" id="twitter" href="https://twitter.com/getkalido" target="_blank">
+						<img class="social" alt="Follow us on Twitter" src="img/social/twitter.svg"/>
+					</a><!--
+					--><a class="social-link" id="email" href="contact.html">
+						<img class="social" alt="Send us an email" src="img/social/email.svg"/>
+					</a>
+				</div>
+				<p class="copyright" id="copy-mobile"> Copyright &copy; 2016.<br/>Om Mobile Ventures </p>
+			</div>
+		</div>
+		<!-- jQuery -->
+		<script type="text/javascript" src="lib/jquery-3.1.0.js"></script>
+		<!-- javascript -->
+		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/contact.js"></script>
+	</body>
+</html>
