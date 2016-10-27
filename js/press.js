@@ -18,7 +18,7 @@ $(document).ready(function(){
 				case "text-only":
 					html = '<div class="article text-only" id="article-'+i+'">';
 					html += '<div class="article-text">';
-					html += '<p class="article-date">'+records[i].date+'</p>';
+					// html += '<p class="article-date">'+records[i].date+'</p>';
 					html += '<p class="article-heading">'+records[i].heading+'</p>';
 					html += '<p class="article-text">'+records[i].summary+'</p>';
 					html += '<a class="article-link" href="'+records[i].link+'">Read the article</a>';
@@ -28,7 +28,7 @@ $(document).ready(function(){
 				case "caption-only":
 					html = '<div class="article caption-only" id="article-'+i+'">';
 					html += '<div class="article-text">';
-					html += '<p class="article-date">'+records[i].date+'</p>';
+					// html += '<p class="article-date">'+records[i].date+'</p>';
 					html += '<p class="article-heading">'+records[i].heading+'</p>';
 					html += '<a class="article-link" href="'+records[i].link+'">Read the article</a>';
 					html += '</div>';
@@ -40,7 +40,7 @@ $(document).ready(function(){
 				case "caption-image":
 					html = '<div class="article caption-img img-card" id="article-'+i+'" style="background-image:url('+records[i].image+')"><div class="dark-overlay">';
 					html += '<div class="article-text">';
-					html += '<p class="article-date">'+records[i].date+'</p>';
+					// html += '<p class="article-date">'+records[i].date+'</p>';
 					html += '<p class="article-heading">'+records[i].heading+'</p>';
 					html += '<a class="article-link" href="'+records[i].link+'">Read the article</a>';
 					html += '</div>';
@@ -49,7 +49,7 @@ $(document).ready(function(){
 				case "standard":
 					html = '<div class="article standard img-card" id="article-'+i+'" style="background-image:url('+records[i].image+')"><div class="dark-overlay">';
 					html += '<div class="article-text">';
-					html += '<p class="article-date">'+records[i].date+'</p>';
+					// html += '<p class="article-date">'+records[i].date+'</p>';
 					html += '<p class="article-heading">'+records[i].heading+'</p>';
 					html += '<p class="article-text">'+records[i].summary+'</p>';
 					html += '<a class="article-link" href="'+records[i].link+'">Read the article</a>';

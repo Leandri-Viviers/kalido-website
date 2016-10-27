@@ -1,6 +1,60 @@
 {
-	"posts":
-	[
-		
-	]
+  "posts": [
+    {
+      "type": "text-only",
+      "order": "0",
+      "heading": "Tech Central: SA built matching app, Kalido, raises millions",
+      "summary": "Our CEO, Sanjay, was interviewed by TechCentral, South Africa’s leading source for technology journalism. Read the interview here. \n",
+      "link": "https://www.techcentral.co.za/sa-built-matching-app-kalido-raises-millions/68374/",
+      "image": ""
+    },
+    {
+      "type": "text-only",
+      "order": "0",
+      "heading": "Die Burger: App van die Week",
+      "summary": "Die Burger is amongst the biggest selling Afrikaans newspapers in South Africa. We were proud to be featured as the ‘App of the Week’. Read more here. \n",
+      "link": "https://teamkalido.slack.com/messages/press/ ",
+      "image": ""
+    },
+    {
+      "type": "text-only",
+      "order": "0",
+      "heading": "TechCentral: SA built matching app, Kalido, raises millions",
+      "summary": "Our CEO, Sanjay, was interviewed by TechCentral, South Africa’s leading source for technology journalism. Read the interview here. \n",
+      "link": "https://www.techcentral.co.za/sa-built-matching-app-kalido-raises-millions/68374/",
+      "image": ""
+    },
+    {
+      "type": "standard",
+      "order": "0",
+      "heading": "Forbes Africa: ‘It’s like referrals on steroids.’ ",
+      "summary": "We were very honoured to be featured in Forbes Africa, where our CEO, Sanjay, gave a fantastic interview. Read the interview here. \n",
+      "link": "https://teamkalido.slack.com/messages/press/ ",
+      "image": "img/press/Forbes_logo.png"
+    },
+    {
+      "type": "text-only",
+      "order": "0",
+      "heading": "BizCommunity: SA’s matchmaking app for the freelance economy ",
+      "summary": "BizCommunity, a leading B2B marketing and media news site in South Africa and Africa, did a feature on us as part of #InnovationMonth in September 2016. Read more here.  \n",
+      "link": "http://www.bizcommunity.com/Article/196/743/150839.html ",
+      "image": "img/press/Forbes_Africa_October_2016[3].jpg"
+    },
+    {
+      "type": "standard",
+      "order": "0",
+      "heading": "Maggs on Media: Changing the world of work with Kalido",
+      "summary": "Our CEO, Sanjay, chats to Jeremy Maggs on South Africa\u0027s leading tech and media television show. Watch the conversation here.",
+      "link": "http://www.enca.com/media/video/maggs-on-media-changing-the-world-of-work-with-kalido",
+      "image": "img/press/Maggs_on_Media.jpg"
+    },
+    {
+      "type": "standard",
+      "order": "0",
+      "heading": "Sunday Times:  Just a click away: local jobs app to go global",
+      "summary": "Sunday Times, the biggest selling weekly newspaper in South Africa featured us in this in-depth article. Read it here.",
+      "link": "https://slack-files.com/files-pri-safe/T0A05E3MY-F2B6Y3EMS/sunday_times_just_a_click_away_local_jobs_app_to_go_global.pdf?c\u003d1476352467-e4150dc38c47fb2937d13ba130e62b689ab430ee ",
+      "image": "img/press/Sunday_Times_Logo.gif"
+    }
+  ]
 }
