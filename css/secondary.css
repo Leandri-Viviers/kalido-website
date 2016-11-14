@@ -504,6 +504,45 @@ p.card-text
 	color: #455A64;
 }
 
+/* Features */
+div.feature-container
+{
+	display: block;
+	width: 100%;
+	background-color: #FFF;
+}
+
+div#feature
+{
+	width: 70%;
+	margin: 0 auto;
+	padding: 2% 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+div#feature > img
+{
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 20%;
+	max-height: 1.5vw;
+	flex: 1 0 auto;
+}
+
+img#cnbc
+{
+	max-height: 2vw !important;
+}
+
 /* Footer */
 div#footer
 {
@@ -833,6 +872,39 @@ and (max-width: 1200px)
 		width: 60%;
 	}
 
+	/* Features */
+	div#feature
+	{
+		width: 90%;
+		padding: 4% 0;
+	}
+
+	div#feature > img
+	{
+		max-height: 2.5vw;
+		max-width: 30%;
+	}
+
+	img.hidden-img
+	{
+		display: none !important;
+	}
+
+	img#forbes-africa
+	{
+		order: 1;
+	}
+
+	img#cnn
+	{
+		order: 2;
+	}
+
+	img#sunday-times
+	{
+		order: 3;
+	}
+
 	/* Footer */
 	div#footer
 	{
@@ -1100,6 +1172,17 @@ and (orientation: portrait)
 	{
 		font-size: 10pt;
 		font-size: 3.7vw;
+	}
+
+	/* Features */
+	div#feature
+	{
+		padding: 5% 0;
+	}
+
+	div#feature > img
+	{
+		max-height: 5vw;
 	}
 
 	/* Footer */
@@ -1378,6 +1461,17 @@ and (orientation: landscape)
 	{
 		font-size: 10pt;
 		font-size: 2.8vw;
+	}
+
+	/* Features */
+	div#feature
+	{
+		padding: 5% 0;
+	}
+
+	div#feature > img
+	{
+		max-height: 5vw;
 	}
 
 	/* Footer */
