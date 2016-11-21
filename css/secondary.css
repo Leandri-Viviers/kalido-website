@@ -167,15 +167,13 @@ div#nav-container
 
 ul#nav
 {
-	width: 90%;
 	font-size: 12pt;
-	margin: 0 auto;
 }
 
 li.nav-item
 {
 	display: inline-block;
-	margin: 0 3% 0 3%;
+	margin: 0 4% 0 4%;
 }
 
 a.nav-link:link
@@ -612,6 +610,11 @@ a.social-link
 	margin-right: 2%;
 }
 
+a.social-link > img
+{
+	display: block;
+}
+
 /*** Animations ***/
 .animation-element
 {
@@ -1016,12 +1019,12 @@ and (orientation: portrait)
 	{
 		display: block;
 		margin: 0;
-		height: 9vh;
+		height: 12vh;
 	}
 
 	a.nav-link:link
 	{
-		line-height: 9vh;
+		line-height: 12vh;
 		padding: 0 0 0 5%;
 	}
 
