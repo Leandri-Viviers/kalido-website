@@ -227,3 +227,23 @@ and (orientation: landscape)
 		border-size: 1px;
 	}
 }
+
+@media only screen and (min-resolution: 120dpi),
+only screen and (min-resolution: 1.25dppx)
+{
+	p#index-header-text
+	{
+		font-size: 14pt;
+	}
+
+
+	p#faq-heading
+	{
+		font-size: 28pt;
+	}
+
+	p#faq-text
+	{
+		font-size: 12pt;
+	}
+}

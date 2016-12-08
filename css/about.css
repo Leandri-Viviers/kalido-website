@@ -23,13 +23,8 @@ p.column-text
 {
 	font-size: 14pt;
 	line-height: 2;
-	-webkit-column-count: 3;
-	-moz-column-count: 3;
-	column-count: 3;
-	-webkit-column-gap: 4em;
-	-moz-column-gap: 4em;
-	column-gap: 4em;
 	padding: 0% 5% 0% 5%;
+	margin: 0;
 }
 
 /* Sections */
@@ -63,20 +58,32 @@ div.list-item
     flex: 1;
 }
 
+div.flexBox
+{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	margin-bottom: 5%;
+}
+
 p.number
 {
-	float: left;
 	font-size: 56pt;
-	padding-right: 5%;
 	margin: 0 5% 0 0;
-	border-right: 1px solid #607D8B;
 	color: #607D8B;
 }
 
 p.list-heading
 {
 	font-size: 28pt;
-	margin: 0 0 5% 0;
+	margin: 0;
+	padding-left: 5%;
+	border-left: 1px solid #607D8B;
 }
 
 p.list-text
@@ -125,9 +132,6 @@ and (max-width: 1200px)
 
 	p.column-text
 	{
-		-webkit-column-count: 1;
-		-moz-column-count: 1;
-		column-count: 1;
 		padding: 0;
 	}
 
@@ -146,13 +150,22 @@ and (max-width: 1200px)
 		padding: 8% 0 8% 0;
 	}
 
+	div.flexBox
+	{
+		display: block;
+	}
+
 	p.number
 	{
-		float: none;
-		border-right: none;
 		border-bottom: 1px solid #607D8B;
 		padding: 0 0 5% 0;
 		margin: 0 0 8% 0;
+	}
+
+	p.list-heading
+	{
+		border-left: none;
+		padding: 0;
 	}
 
 	div#about-footer-inner
@@ -187,9 +200,6 @@ and (orientation: portrait)
 	{
 		font-size: 10pt;
 		font-size: 3.7vw;
-		-webkit-column-count: 1;
-		-moz-column-count: 1;
-		column-count: 1;
 		padding: 0;
 	}
 
@@ -208,14 +218,17 @@ and (orientation: portrait)
 		padding: 10% 0 10% 0;
 	}
 
+	div.flexBox
+	{
+		display: block;
+	}
+
 	p.number
 	{
-		float: none;
 		font-size: 40pt;
 		font-size: 16.6vw;
 		padding: 0 0 5% 0;
 		margin: 0 0 8% 0;
-		border-right: none;
 		border-bottom: 1px solid #607D8B;
 	}
 
@@ -223,6 +236,8 @@ and (orientation: portrait)
 	{
 		font-size: 20pt;
 		font-size: 6.6vw;
+		border-left: none;
+		padding: 0;
 	}
 
 	p.list-text
@@ -276,9 +291,6 @@ and (orientation: landscape)
 	{
 		font-size: 10pt;
 		font-size: 2.8vw;
-		-webkit-column-count: 1;
-		-moz-column-count: 1;
-		column-count: 1;
 		padding: 0;
 	}
 
@@ -296,12 +308,15 @@ and (orientation: landscape)
 		padding: 5% 0 5% 0;
 	}
 
+	div.flexBox
+	{
+		display: block;
+	}
+
 	p.number
 	{
-		float: none;
 		font-size: 40pt;
 		font-size: 11.1vw;
-		border-right: none;
 		border-bottom: 1px solid #607D8B;
 	}
 
@@ -309,6 +324,8 @@ and (orientation: landscape)
 	{
 		font-size: 20pt;
 		font-size: 5.6vw;
+		border-left: none;
+		padding: 0;
 	}
 
 	p.list-text
@@ -333,5 +350,34 @@ and (orientation: landscape)
 	{
 		font-size: 10pt;
 		font-size: 2.8vw;
+	}
+}
+
+@media only screen and (min-resolution: 120dpi),
+only screen and (min-resolution: 1.25dppx)
+{
+	p.column-text
+	{
+		font-size: 11pt;
+	}
+
+	p.number
+	{
+		font-size: 44pt;
+	}
+
+	p.list-heading
+	{
+		font-size: 22pt;
+	}
+
+	p.list-text
+	{
+		font-size: 11pt;
+	}
+
+	p#about-footer-text
+	{
+		font-size: 12pt;
 	}
 }

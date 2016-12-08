@@ -3,6 +3,7 @@ html, body
 	margin: 0;
 	padding: 0;
 	background-color: #FAFAFA;
+	font-size: 12px;
 }
 
 @font-face
@@ -45,7 +46,7 @@ div.overlay
 {
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0,0,0,0.4);
+	background-color: rgba(0,0,0,0.6);
 }
 
 div#wrapper
@@ -155,7 +156,7 @@ input#hbm-toggle:checked ~ label[for="hbm-toggle"] img#hbm-close
 div#nav-container
 {
 	position: fixed;
-	width: 100vw;
+	width: 100%;
 	background-color: #263238;
 	text-align: center;
 	z-index: 10;
@@ -348,7 +349,7 @@ div.download-buttons
 a.download-link
 {
 	display: inline-block;
-	width: 35%;
+	width: 32%;
 	margin: 0 2% 0 2%;
 }
 
@@ -422,6 +423,7 @@ div.image
 img.screenshot
 {
 	max-width: 100%;
+	max-height: 80vh;
 }
 
 div.copy
@@ -532,13 +534,13 @@ div#feature > img
 	display: inline-block;
 	vertical-align: middle;
 	max-width: 20%;
-	max-height: 1.5vw;
+	max-height: 25px;
 	flex: 1 0 auto;
 }
 
 img#cnbc
 {
-	max-height: 2vw !important;
+	max-height: 30px !important;
 }
 
 /* Footer */
@@ -1523,5 +1525,69 @@ and (orientation: landscape)
 		line-height: 2;
 		font-size: 9pt;
 		font-size: 2.5vw;
+	}
+}
+
+@media only screen and (min-resolution: 120dpi),
+only screen and (min-resolution: 1.25dppx)
+{	
+	a.button
+	{
+		font-size: 11pt;
+	}
+
+	ul#nav
+	{
+		font-size: 10pt;
+	}
+
+	p.header-subtitle
+	{
+		font-size: 32pt;
+	}
+
+	p.header-typed
+	{
+		font-size: 32pt;
+	}
+
+	p.header-text
+	{
+		font-size: 11pt;
+	}
+
+	p.page-heading
+	{
+		font-size: 28pt;
+	}
+
+	p#download-heading
+	{
+		font-size: 28pt;
+	}
+
+	p#download-text
+	{
+		font-size: 11pt;
+	}
+
+	p.page-text
+	{
+		font-size: 11pt;
+	}
+
+	p.card-heading
+	{
+		font-size: 14pt;
+	}
+
+	p.card-text
+	{
+		font-size: 10pt;
+	}
+
+	div#footer
+	{
+		font-size: 10pt;
 	}
 }
