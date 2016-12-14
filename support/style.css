@@ -148,6 +148,12 @@ span
 	font-family: robotoRegular;
 }
 
+span.sub_heading
+{
+	font-family: robotoLight;
+	font-size: 14pt;
+}
+
 /*** Mobile Portrait ***/
 @media only screen
 and (max-device-width: 992px)
