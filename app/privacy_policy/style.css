@@ -75,7 +75,7 @@ a
 	color: inherit;
 }
 
-span
+span.sub_heading
 {
-	font-family: robotoRegular;
+	font-size: 14pt;
 }
