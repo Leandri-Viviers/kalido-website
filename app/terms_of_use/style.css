@@ -75,7 +75,13 @@ a
 	color: inherit;
 }
 
+span
+{
+	font-family: robotoRegular;
+}
+
 span.sub_heading
 {
+	font-family: robotoLight;
 	font-size: 14pt;
 }

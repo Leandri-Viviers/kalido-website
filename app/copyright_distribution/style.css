@@ -56,13 +56,13 @@ p.text
 	margin: 0 4vw 4vw 4vw;
 }
 
-.list
+ul.list
 {
 	padding: 0;
 	margin: 0.5vw 4vw 0 4vw;
 }
 
-.list > li
+ul.list > li
 {
 	margin: 0 4vw 4.5vw 4vw;
 	color: #607D8B;
@@ -75,26 +75,13 @@ a
 	color: inherit;
 }
 
-a.back
-{
-	border-bottom: 1px solid;
-	color: #607D8B;
-}
-
 span
 {
 	font-family: robotoRegular;
 }
 
-@media only screen
-and (min-device-width: )
-and (max-device-width: )
+span.sub_heading
 {
-	
-}
-
-@media only screen
-and (min-device-width: )
-{
-	
+	font-family: robotoLight;
+	font-size: 14pt;
 }
