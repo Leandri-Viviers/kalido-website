@@ -534,7 +534,7 @@ div#feature > img
 	display: inline-block;
 	vertical-align: middle;
 	max-width: 20%;
-	max-height: 25px;
+	max-height: 1.2vw;
 	flex: 1 0 auto;
 }
 
@@ -669,7 +669,7 @@ a.social-link > img
 {
 	opacity: 1;
 	-webkit-transform: translate3d(0, 0, 0);
-	-moz-transform: translate3d(0, 0, 0);  
+	-moz-transform: translate3d(0, 0, 0);
 	-o-transform: translate(0, 0);
 	-ms-transform: translate(0, 0);
 	transform: translate3d(0, 0, 0);
@@ -714,7 +714,7 @@ and (max-width: 1200px)
 	{
 		display: block;
 	}
-	
+
 	img.hbm-image
 	{
 		width: 3vh;
@@ -965,7 +965,7 @@ and (orientation: portrait)
 	{
 		display: block;
 	}
-	
+
 	img.hbm-image
 	{
 		width: 3vh;
@@ -1187,7 +1187,7 @@ and (orientation: portrait)
 
 	div#feature > img
 	{
-		max-height: 5vw;
+		max-height: 4vw;
 	}
 
 	/* Footer */
@@ -1530,7 +1530,7 @@ and (orientation: landscape)
 
 @media only screen and (min-resolution: 120dpi),
 only screen and (min-resolution: 1.25dppx)
-{	
+{
 	a.button
 	{
 		font-size: 11pt;
