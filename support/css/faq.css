@@ -103,6 +103,16 @@ div.faq-section:last-child
 	padding-bottom: 4%;
 }
 
+div.faq-sub-heading
+{
+	margin: 2% 0 2% 8%;
+	display: inline-block;
+	font-size: 16pt;
+	width: 84%;
+	overflow-wrap: break-word;
+	color: #263238;
+}
+
 div.faq-question
 {
 	margin: 2% 0;
@@ -175,9 +185,20 @@ span.faq-nav-tab
 	background-color: #ECEFF1;
 }
 
-span.faq-nav-tab.active
+/* Selected */
+li.faq-nav-li.active > span
 {
-	background-color: #FFAB00;
+	background-color: #37474F;
+}
+
+li.faq-nav-li.active > a
+{
+	color: #37474F;
+}
+
+li.faq-sub-li.active > a
+{
+	color: #78909C;
 }
 
 a.faq-nav-link
@@ -186,17 +207,32 @@ a.faq-nav-link
 	width: 82%;
 	padding: 5% 8%;
 	font-size: 12pt;
-	color: #546E7A;
+	color: #B0BEC5;
 }
 
 a.faq-nav-link:visited
 {
-	color: #546E7A;
+	color: #B0BEC5;
 }
 
 a.faq-nav-link:active
 {
-	color: #546E7A;
+	color: #B0BEC5;
+}
+
+/* Sub-Navigation */
+a.faq-sub-link
+{
+	display: inline-block;
+	width: 80%;
+	padding: 4% 10%;
+	font-size: 12pt;
+	color: #B0BEC5;
+}
+
+p.copyright
+{
+	padding: 2% 0 2% 0;
 }
 
 /*** Responsive ***/
@@ -207,7 +243,7 @@ and (max-width: 1200px)
 	{
 		display: block;
 	}
-	
+
 	div#faq-nav-card
 	{
 		display: none;

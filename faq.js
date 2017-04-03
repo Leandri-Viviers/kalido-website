@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	
-	window.location = "http://www.kalido.me/faq/index.html";
+
+	window.location = "http://www.kalido.me/support/index.html?page=faq";
 
 });

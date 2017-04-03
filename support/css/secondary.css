@@ -625,7 +625,7 @@ a.social-link
 {
 	opacity: 1;
 	-webkit-transform: translate3d(0, 0, 0);
-	-moz-transform: translate3d(0, 0, 0);  
+	-moz-transform: translate3d(0, 0, 0);
 	-o-transform: translate(0, 0);
 	-ms-transform: translate(0, 0);
 	transform: translate3d(0, 0, 0);
@@ -670,7 +670,7 @@ and (max-width: 1200px)
 	{
 		display: block;
 	}
-	
+
 	img.hbm-image
 	{
 		width: 3vh;
@@ -888,7 +888,7 @@ and (orientation: portrait)
 	{
 		display: block;
 	}
-	
+
 	img.hbm-image
 	{
 		width: 3vh;
