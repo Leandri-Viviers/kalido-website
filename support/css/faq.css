@@ -92,6 +92,15 @@ p.faq-heading
 	color: #263238;
 }
 
+div.faq-sub-heading > p
+{
+	font-size: 16pt;
+	width: 92%;
+	overflow-wrap: break-word;
+	color: #263238;
+	margin: 2% 0 2% 8%;
+}
+
 div.faq-section
 {
 	border-bottom: 1px solid #FAFAFA;
@@ -101,16 +110,6 @@ div.faq-section:last-child
 {
 	border: none;
 	padding-bottom: 4%;
-}
-
-div.faq-sub-heading
-{
-	margin: 2% 0 2% 8%;
-	display: inline-block;
-	font-size: 16pt;
-	width: 84%;
-	overflow-wrap: break-word;
-	color: #263238;
 }
 
 div.faq-question
@@ -271,6 +270,12 @@ and (max-width: 1200px)
 		margin: 0;
 	}
 
+	div.faq-sub-heading > p
+	{
+		width: 94%;
+		margin: 4% 0 4% 6%;
+	}
+
 	div.faq-question
 	{
 		margin: 4% 0;
@@ -304,6 +309,14 @@ and (orientation: portrait)
 	{
 		font-size: 16pt;
 		font-size: 5.7vw;
+	}
+
+	div.faq-sub-heading > p
+	{
+		font-size: 12pt;
+		font-size: 4.2vw;
+		width: 90%;
+		margin: 8% 0 8% 10%;
 	}
 
 	div.faq-question
@@ -343,6 +356,12 @@ and (orientation: landscape)
 	{
 		font-size: 16pt;
 		font-size: 3.2vw;
+	}
+
+	div.faq-sub-heading > p
+	{
+		font-size: 12pt;
+		font-size: 2.4vw;
 	}
 
 	a.acc-link > p

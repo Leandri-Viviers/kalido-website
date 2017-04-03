@@ -14,13 +14,13 @@ $(document).ready(function(){
 			var $id = $this.prop('id');
 			//	This heading is FAQs
 			if($id === 'faq-list-item'){
-				$('ul#sub-nav').slideDown(300);
+				$('ul#faq-sub-nav').slideDown(300);
 				$('a#general').click();
 			}
 			else {
 				if($('#faq-list-item').is(':visible')){
 					$('.faq-sub-li.active').removeClass('active');
-					$('ul#sub-nav').slideUp(300);
+					$('ul#faq-sub-nav').slideUp(300);
 				}
 				var $page_id = $(this).prop('id');
 				$('#faq-page-card').load($page_id+'.html');
@@ -37,7 +37,7 @@ $(document).ready(function(){
 
 		if(!$faq.hasClass('active')){
 			$('.faq-nav-li.active').removeClass('active');
-			$('ul#sub-nav').slideDown(200);
+			$('ul#faq-sub-nav').slideDown(200);
 			$faq.addClass('active');
 			$sub.addClass('active');
 		}
@@ -50,18 +50,51 @@ $(document).ready(function(){
 	});
 
     /* Menu: Mobile */
-    $('a.nav-link').click(function(e){
+	$('a.nav-link.top').click(function(e){
 		e.preventDefault();
 
-		$('a.active').removeClass('active');
+		$this = $(this);
+		//	Main heading is not selected
+		if(!$this.hasClass('active')){
+			//	Set this heading as active
+			$('.nav-link.active').removeClass('active');
+			$this.addClass('active');
 
-		var $id = $(this).prop('id');
-		$('#faq-page-card').load('pages/'+$id+'.html', function(){
-			//	Collapse hamburger
-			$("#hbm-toggle").prop("checked", false);
-		});
-		$(this).addClass('active');
+			var $id = $this.prop('id');
+			//	This heading is FAQs
+			if($id === 'faq'){
+				$('a#general').click();
+			}
+			else {
+				var $page_id = $(this).prop('id');
+				$('#faq-page-card').load($page_id+'.html');
+			}
+		}
+
+		$('#hbm-toggle').prop('checked', false);
     });
+
+	/* Submenu: Mobile */
+	$('a.nav-link.sub').click(function(e){
+		e.preventDefault();
+
+		var $faq = $('a#faq');
+		var $sub = $(this);
+
+		if(!$faq.hasClass('active')){
+			$('.nav-link.top.active').removeClass('active');
+			$faq.addClass('active');
+			$sub.addClass('active');
+		}
+		else if(!$sub.hasClass('active')){
+			$('.nav-link.sub.active').removeClass('active');
+			$sub.addClass('active');
+			var $page_id = $(this).prop('id');
+			$('#faq-page-card').load('faq/'+$page_id+'.html');
+		}
+
+		$('#hbm-toggle').prop('checked', false);
+	});
 
 	/* Accordion */
 	$('#faq-page-card').on('click', '.acc-link', function(e){
