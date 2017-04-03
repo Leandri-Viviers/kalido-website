@@ -92,6 +92,15 @@ p.faq-heading
 	color: #263238;
 }
 
+div.faq-sub-heading > p
+{
+	font-size: 16pt;
+	width: 92%;
+	overflow-wrap: break-word;
+	color: #263238;
+	margin: 2% 0 2% 8%;
+}
+
 div.faq-section
 {
 	border-bottom: 1px solid #FAFAFA;
@@ -175,9 +184,20 @@ span.faq-nav-tab
 	background-color: #ECEFF1;
 }
 
-span.faq-nav-tab.active
+/* Selected */
+li.faq-nav-li.active > span
 {
-	background-color: #FFAB00;
+	background-color: #37474F;
+}
+
+li.faq-nav-li.active > a
+{
+	color: #37474F;
+}
+
+li.faq-sub-li.active > a
+{
+	color: #78909C;
 }
 
 a.faq-nav-link
@@ -186,17 +206,32 @@ a.faq-nav-link
 	width: 82%;
 	padding: 5% 8%;
 	font-size: 12pt;
-	color: #546E7A;
+	color: #B0BEC5;
 }
 
 a.faq-nav-link:visited
 {
-	color: #546E7A;
+	color: #B0BEC5;
 }
 
 a.faq-nav-link:active
 {
-	color: #546E7A;
+	color: #B0BEC5;
+}
+
+/* Sub-Navigation */
+a.faq-sub-link
+{
+	display: inline-block;
+	width: 80%;
+	padding: 4% 10%;
+	font-size: 12pt;
+	color: #B0BEC5;
+}
+
+p.copyright
+{
+	padding: 2% 0 2% 0;
 }
 
 /*** Responsive ***/
@@ -207,7 +242,7 @@ and (max-width: 1200px)
 	{
 		display: block;
 	}
-	
+
 	div#faq-nav-card
 	{
 		display: none;
@@ -233,6 +268,12 @@ and (max-width: 1200px)
 	{
 		width: 100%;
 		margin: 0;
+	}
+
+	div.faq-sub-heading > p
+	{
+		width: 94%;
+		margin: 4% 0 4% 6%;
 	}
 
 	div.faq-question
@@ -268,6 +309,14 @@ and (orientation: portrait)
 	{
 		font-size: 16pt;
 		font-size: 5.7vw;
+	}
+
+	div.faq-sub-heading > p
+	{
+		font-size: 12pt;
+		font-size: 4.2vw;
+		width: 90%;
+		margin: 8% 0 8% 10%;
 	}
 
 	div.faq-question
@@ -307,6 +356,12 @@ and (orientation: landscape)
 	{
 		font-size: 16pt;
 		font-size: 3.2vw;
+	}
+
+	div.faq-sub-heading > p
+	{
+		font-size: 12pt;
+		font-size: 2.4vw;
 	}
 
 	a.acc-link > p

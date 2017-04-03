@@ -625,7 +625,7 @@ a.social-link
 {
 	opacity: 1;
 	-webkit-transform: translate3d(0, 0, 0);
-	-moz-transform: translate3d(0, 0, 0);  
+	-moz-transform: translate3d(0, 0, 0);
 	-o-transform: translate(0, 0);
 	-ms-transform: translate(0, 0);
 	transform: translate3d(0, 0, 0);
@@ -670,7 +670,7 @@ and (max-width: 1200px)
 	{
 		display: block;
 	}
-	
+
 	img.hbm-image
 	{
 		width: 3vh;
@@ -724,13 +724,31 @@ and (max-width: 1200px)
 	{
 		display: block;
 		margin: 0;
-		height: 9vh;
+		height: 6vh;
+		border-bottom: 1px solid rgba(55, 71, 79, 0.5);
+	}
+
+	li.nav-item.border-top
+	{
+		border-top: 1px solid rgba(55, 71, 79, 0.5);
 	}
 
 	a.nav-link:link
 	{
-		line-height: 9vh;
+		line-height: 6vh;
 		padding: 0 0 0 5%;
+		width: 95%;
+	}
+
+	li.nav-item.sub
+	{
+		border-bottom-color: transparent;
+	}
+
+	li.nav-item.sub > a.nav-link:link
+	{
+		padding: 0 0 0 10%;
+		width: 90%;
 	}
 
 	a.active:link
@@ -888,7 +906,7 @@ and (orientation: portrait)
 	{
 		display: block;
 	}
-	
+
 	img.hbm-image
 	{
 		width: 3vh;
@@ -944,13 +962,31 @@ and (orientation: portrait)
 	{
 		display: block;
 		margin: 0;
-		height: 9vh;
+		height: 6vh;
+		border-bottom: 1px solid rgba(55, 71, 79, 0.5);
+	}
+
+	li.nav-item.border-top
+	{
+		border-top: 1px solid rgba(55, 71, 79, 0.5);
 	}
 
 	a.nav-link:link
 	{
-		line-height: 9vh;
+		line-height: 6vh;
 		padding: 0 0 0 5%;
+		width: 95%;
+	}
+
+	li.nav-item.sub
+	{
+		border-bottom-color: transparent;
+	}
+
+	li.nav-item.sub > a.nav-link:link
+	{
+		padding: 0 0 0 10%;
+		width: 90%;
 	}
 
 	a.active:link
@@ -1217,13 +1253,31 @@ and (orientation: landscape)
 	{
 		display: block;
 		margin: 0;
-		height: 9vh;
+		height: 6vh;
+		border-bottom: 1px solid rgba(55, 71, 79, 0.5);
+	}
+
+	li.nav-item.border-top
+	{
+		border-top: 1px solid rgba(55, 71, 79, 0.5);
 	}
 
 	a.nav-link:link
 	{
-		line-height: 9vh;
+		line-height: 6vh;
 		padding: 0 0 0 5%;
+		width: 95%;
+	}
+
+	li.nav-item.sub
+	{
+		border-bottom-color: transparent;
+	}
+
+	li.nav-item.sub > a.nav-link:link
+	{
+		padding: 0 0 0 10%;
+		width: 90%;
 	}
 
 	a.active:link
